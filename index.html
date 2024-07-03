@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img
+            src="./asset/images/logo-icon-nav.png"
+            alt="E-logo"
+            data-testid="NavIcon"
+            width="100"
+            height="100"
+          />
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleNavbar()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <ul class="navbar">
+          <li class="navlist"><a href="#home">Home</a></li>
+          <li class="navlist"><a href="#goals">Goals</a></li>
+          <li class="navlist"><a href="#slackProfile">Slack Profile</a></li>
+          <li class="navlink"><a href="#usefulLinks">Useful Links</a></li>
+        </ul>
+      </nav>
+      <main>
+        <section class="hero-section" id="#home">
+          <div class="heroText">
+            <p class="textWel">&#128075; Hello, there</p>
+            <h1>
+              I am <span class="colorText">Frontend Developer</span> From
+              Nigeria
+            </h1>
+            <p>
+              Welcome to my tech journey website Here are my goals for the next
+              two years in the tech field
+            </p>
+            <div class="btns">
+              <div class="buttons">
+                <a
+                  href="tel:+2348107513004"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button class="btn-primary" type="submit">
+                    Book Free Call
+                  </button>
+                </a>
+              </div>
+              <div class="buttons-sec">
+                <a href="https://wa.me/2348107513004">
+                  <button class="btn-secondary" type="submit">
+                    Text Me On Whatsapp
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hero-img">
+            <img
+              data-testid="homeSectionPicture"
+              src="./asset/images/Shared workspace-img.png"
+              alt=""
+              width="500"
+              height="500"
+            />
+          </div>
+        </section>
+        <section class="GoalsPage" id="#goals">
+          <div class="goalText">
+            <h2>My Goals</h2>
+            <p class="headP">
+              Here are the break down of my goals in the next two years as a
+              frontend developer
+            </p>
+          </div>
+          <div class="grid-row">
+            <div class="flexCol">
+              <div class="imgRow nutral">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14.25 9.75 16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z"
+                  />
+                </svg>
+              </div>
+              <div class="textRow">
+                <h3>Master Advanced React Concepts</h3>
+              </div>
+              <div class="textRow-body">
+                <p class="textP">
+                  Deepen understanding of React by mastering advanced concepts
+                  such as Redux for state management, context API, hooks (like
+                  useEffect and useState), and server-side rendering. Aim to
+                  build complex applications that demonstrate proficiency in
+                  these areas.
+                </p>
+              </div>
+            </div>
+
+            <div class="flexCol">
+              <div class="imgRow meetGreen">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m8.25 7.5.415-.207a.75.75 0 0 1 1.085.67V10.5m0 0h6m-6 0h-1.5m1.5 0v5.438c0 .354.161.697.473.865a3.751 3.751 0 0 0 5.452-2.553c.083-.409-.263-.75-.68-.75h-.745M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+              </div>
+              <div class="textRow">
+                <h3>Become Proficient in TypeScript</h3>
+              </div>
+              <div class="textRow-body">
+                <p class="textP">
+                  TypeScript is increasingly popular in the frontend development
+                  ecosystem for its type safety and improved developer
+                  experience. Goal should be to become proficient in TypeScript,
+                  converting existing projects from JavaScript to TypeScript and
+                  starting new projects with TypeScript from scratch.
+                </p>
+              </div>
+            </div>
+
+            <div class="flexCol">
+              <div class="imgRow peach">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"
+                  />
+                </svg>
+              </div>
+              <div class="textRow">
+                <h3>Explore Backend Integration</h3>
+              </div>
+              <div class="textRow-body">
+                <p class="textP">
+                  Expand skills beyond frontend by learning to integrate with
+                  backend services and APIs. This could involve understanding
+                  RESTful APIs, GraphQL, and asynchronous JavaScript operations.
+                  Building full-stack applications or contributing to backend
+                  tasks in collaborative projects would be beneficial.
+                </p>
+              </div>
+            </div>
+
+            <div class="flexCol">
+              <div class="imgRow teaGreen">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"
+                  />
+                </svg>
+              </div>
+              <div class="textRow">
+                <h3>Improve Performance Optimization</h3>
+              </div>
+              <div class="textRow-body">
+                <p class="textP">
+                  Focus on improving the performance of web applications. Learn
+                  techniques such as code splitting, lazy loading, optimizing
+                  images and assets, and implementing caching strategies.
+                  Measure and optimize performance using tools like Lighthouse,
+                  WebPageTest, and Chrome DevTools
+                </p>
+              </div>
+            </div>
+
+            <div class="flexCol">
+              <div class="imgRow varColor">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+              </div>
+              <div class="textRow">
+                <h3>Stay Updated with Modern Web Development Trends</h3>
+              </div>
+              <div class="textRow-body">
+                <p class="textP">
+                  The web development landscape evolves rapidly. Stay updated
+                  with the latest trends, tools, and best practices. This
+                  includes learning about new React features, exploring popular
+                  CSS frameworks like Tailwind CSS or CSS-in-JS libraries,
+                  understanding progressive web app (PWA) principles, and
+                  experimenting with emerging technologies like WebAssembly or
+                  Next.js
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="Profile" id="#slackProfile">
+          <div class="profile-picture">
+            <img
+              src="./asset/images/EstherPicture.png"
+              alt="Profile Picture"
+              data-testid="slackProfilePicture"
+              width="800"
+              height="800"
+            />
+          </div>
+          <div class="slackDetails">
+            <div class="profileText">
+              <h2 class="texthead">My Slack Profile</h2>
+              <p class="profile-prg">
+                I use Slack to connect with the tech community, stay updated on
+                industry trends, and collaborate with fellow developers. I am
+                currently doing an internship program with HNG Intern, here is
+                my slack details on their profile.
+              </p>
+            </div>
+            <div class="profileDetail">
+              <div class="colProf name">
+                <h3>Slack Display Name</h3>
+                <span class="dropdown-icon">▼</span>
+                <p class="details" data-testid="slackName">Esther Ola</p>
+              </div>
+
+              <div class="colProf email">
+                <h3>Slack Email</h3>
+                <span class="dropdown-icon">▼</span>
+                <p class="details" data-testid="slackEmail">
+                  estherolowo2018@gmail.com
+                </p>
+              </div>
+
+              <div class="colProf day">
+                <h3>Current Day</h3>
+                <span class="dropdown-icon">▼</span>
+                <p class="details" data-testid="currentDay" id="currentDay"></p>
+              </div>
+
+              <div class="colProf time">
+                <h3>Current Time (UTC)</h3>
+                <span class="dropdown-icon">▼</span>
+                <p
+                  class="details"
+                  data-testid="currentTimeUTC"
+                  id="currentTimeUTC"
+                ></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="Links" id="#usefulLinks">
+          <div class="textLink">
+            <h2>Useful Links</h2>
+            <p class="linkP">
+              Explore these resources to learn more about HNG Internship
+              opportunities and gain insights into search ranking, web scraping,
+              and website analysis techniques.
+            </p>
+          </div>
+          <div class="flexRow">
+            <div class="linkcol">
+              <img
+                src="./asset/images/HNG.svg"
+                alt="hngLink"
+                width="50"
+                height="50"
+              />
+              <h3 class="detailsLink">
+                <a
+                  href="https://hng.tech/learn"
+                  target="_blank"
+                  data-testid="hngLink"
+                  >HNG Tech and Learn</a
+                >
+              </h3>
+            </div>
+
+            <div class="linkcol">
+              <img
+                src="./asset/images/logo.svg"
+                alt="keywordLink"
+                width="50"
+                height="50"
+              />
+              <h3 class="detailsLink">
+                <a
+                  href="https://keyword.dog"
+                  target="_blank"
+                  data-testid="keywordLink"
+                  >Search Ranking
+                </a>
+              </h3>
+            </div>
+
+            <div class="linkcol">
+              <img
+                src="./asset/images/scape any website.png"
+                alt="scapeWebsite"
+                width="60"
+                height="40"
+              />
+              <h3 class="detailsLink">
+                <a
+                  href="https://scrapeanyweb.site"
+                  target="_blank"
+                  data-testid="scrapeanywebLink"
+                  >Scape any website</a
+                >
+              </h3>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer-container">
+          <div class="footerCol">
+            <div class="footerText">
+              <h2 class="footerH">Let's Connect</h2>
+              <p>
+                Let's get in touch to begin a compelling experience
+                <br />together from start to finish
+              </p>
+            </div>
+            <div class="btns-footer">
+              <div class="buttons">
+                <a
+                  href="tel:+2348107513004"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button class="btn-primary" type="submit">
+                    Book Free Call
+                  </button>
+                </a>
+              </div>
+              <div class="buttons-sec">
+                <a href="https://wa.me/2348107513004">
+                  <button class="btn-secondary" type="submit">
+                    Text Me On Whatsapp
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footerRol">
+            <div class="footerP">
+              <p>
+                &copy; 2024, designed by
+                <span class="colorText">Esther Ola</span>
+              </p>
+            </div>
+            <div class="iconsRoll">
+              <a href="#"
+                ><i
+                  class="fa fa-facebook-square"
+                  style="font-size: 28px; color: rgb(255, 255, 255)"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fa fa-twitter-square"
+                  style="font-size: 28px; color: rgb(255, 255, 255)"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fa fa-linkedin-square"
+                  style="font-size: 28px; color: rgb(255, 255, 255)"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fa fa-instagram"
+                  style="font-size: 28px; color: rgb(255, 255, 255)"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </header>
+    <script src="./main.js"></script>
+  </body>
+</html>
