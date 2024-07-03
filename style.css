@@ -67,7 +67,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   background: var(--background-color);
-  padding: 5px 100px 150px 100px;
+  padding: 150px 100px;
 }
 
 h1 {
