@@ -39,6 +39,7 @@ nav {
   gap: 38rem;
   padding: 5px 80px;
   background: var(--background-color);
+  position: fixed;
 }
 
 .navbar {
