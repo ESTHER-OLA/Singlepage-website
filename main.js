@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// anchor link active
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -56,3 +57,13 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   });
 });
+
+// mobile navbar active
+function showSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "flex";
+}
+function hideSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "none";
+}
